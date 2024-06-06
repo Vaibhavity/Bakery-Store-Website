@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh from the Oven</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Freeman&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-left">
+                <h1>Welcome to Our Bakery</h1>
+                <h2 class="font-weight-bold">Freshly Baked Every Day</h2>
+                <p>Come and taste the best bakery products in town!</p>
+                <a href="#" class="btn btn-pink" data-toggle="modal" data-target="#contactModal">CONTACT US</a>
+            </div>
+            <div class="col-md-6">
+                <img src="./Assets/FirstPage.jpg" class="img-fluid" alt="Image of some chocolate lollipops.">
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="https://getform.io/f/nbdozmka" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+              <label class="form-check-label" for="terms">Do you wish to receive emails from us?</label>
+            </div>
+            <button type="submit" class="btn btn-pink">Submit</button>
+          </form>
+         </div>
+        </div>
+    </div>
+    </div>
+    <div class="services container text-center mt-5">
+        <h2>Baked with Love</h2>
+        <p class="font-weight-bold">Our Products</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./Assets/1.jpg" class="img-fluid" alt="Service 1">
+                    <div class="slide-content">
+                        <h3>Chocolate Cake</h3>
+                        <p>A delicious chocolate cake made with the finest ingredients.</p>
+                        <a href="https://sallysbakingaddiction.com/triple-chocolate-layer-cake/" target="_blank" class="btn btn-pink">Read More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Assets/2.jpg" class="img-fluid" alt="Service 2">
+                    <div class="slide-content">
+                        <h3>Blueberry Muffins</h3>
+                        <p>Freshly baked blueberry muffins that melt in your mouth.</p>
+                        <a href="https://www.inspiredtaste.net/18982/our-favorite-easy-blueberry-muffin-recipe/" target="_blank" class="btn btn-pink">Read More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Assets/3.jpg" class="img-fluid" alt="Service 3">
+                    <div class="slide-content">
+                        <h3>French Baguette</h3>
+                        <p>Authentic French baguette with a crispy crust and soft interior.</p>
+                        <a href="https://tasteofartisan.com/french-baguette-recipe/" target="_blank" class="btn btn-pink">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+        });
+    </script>
+    
+    
+    <div class="why-best container text-center mt-5">
+        <h2>Why You'll Love Us</h2>
+        <p class="font-weight-bold">Our Bakery Delights</p>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="./Assets/Icons/nutrition_24dp_FILL0_wght400_GRAD0_opsz24.png" class="icons">
+                <h4>Quality Ingredients</h4>
+                <p>We use only the finest and freshest ingredients in all our baked goods, ensuring that every bite is a delightful experience.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./Assets/Icons/sentiment_very_satisfied_24dp_FILL0_wght400_GRAD0_opsz24.png" class="icons">
+                <h4>Expert Bakers</h4>
+                <p>Our team of expert bakers brings years of experience and passion to the kitchen, crafting each product with care and precision.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./Assets/Icons/favorite_24dp_FILL0_wght400_GRAD0_opsz24.png" class="icons">
+                <h4>Customer Satisfaction</h4>
+                <p>Customer satisfaction is our top priority. We strive to provide exceptional service and delicious products that keep our customers coming back for more.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./Assets/Icons/bakery_dining_24dp_FILL0_wght400_GRAD0_opsz24.png" class="icons">
+                <h4>Unique Recipes</h4>
+                <p>Our bakery offers a variety of unique and traditional recipes, from classic favorites to innovative new creations, ensuring there's something for everyone.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project container text-center mt-5">
+        <h2>Our Story</h2>
+        <p class="font-weight-bold">Personal journey of our bakery</p>
+        <div class="row">
+            <div class="col-md-6">
+                <img id="projectImage" src="./Assets/One.jpg" class="img-fluid" alt="Project">
+            </div>
+            <div class="col-md-6 text-left">
+                <div class="project-item" onclick="changeImage('./Assets/One.jpg')">
+                    <p>Our bakery project began with a simple yet ambitious goal: to bring the joy of freshly baked goods to our community.</p>
+                </div>
+                <div class="project-item text-white" onclick="changeImage('./Assets/Two.jpg')">
+                    <p>Starting this bakery was not without its challenges. From sourcing the best ingredients to perfecting our recipes, every step of the journey required dedication and hard work.</p>
+                </div>
+                <div class="project-item" onclick="changeImage('./Assets/Three.jpg')">
+                    <p>Today, we are proud to see our vision come to life. Our bakery has become a beloved spot in the community, known for its delicious products and friendly service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="growth container text-center mt-5">
+        <h2>Investing in Our Team</h2>
+        <p class="font-weight-bold">Continuous Learning</p>
+        <div class="row">
+            <div class="col-md-3 growth-card">
+                <img src="./Assets/Icons/local_library_24dp_FILL0_wght400_GRAD0_opsz24.png" class="smaller-icons">
+                <p>At our bakery, we believe that continuous learning is key to personal and professional growth.</p>
+            </div>
+            <div class="col-md-3 growth-card">
+                <img src="./Assets/Icons/yard_24dp_FILL0_wght400_GRAD0_opsz24.png" class="smaller-icons">
+                <p>We are committed to helping our team members advance in their careers.</p>
+            </div>
+            <div class="col-md-3 growth-card">
+                <img src="./Assets/Icons/diversity_1_24dp_FILL0_wght400_GRAD0_opsz24.png" class="smaller-icons">
+                <p>At our bakery, we foster a culture of teamwork and mutual respect.</p>
+            </div>
+            <div class="col-md-3 growth-card">
+                <img src="./Assets/Icons/trophy_24dp_FILL0_wght400_GRAD0_opsz24.png" class="smaller-icons">
+                <p>We recognize and reward the hard work and dedication of our team members.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback container text-center mt-5 py-5 bg-light">
+        <h2>Client's Feedback</h2>
+    <div class="testimonial">
+        <p>"The bakery products are absolutely amazing! The chocolate cake is my favorite, and it always tastes fresh and delicious. The staff is friendly and the service is excellent. Highly recommend!"</p>
+    </div>
+    <div class="testimonial">
+        <p>"I love the variety of products available at this bakery. The blueberry muffins are to die for, and the French baguette is just like the ones I had in Paris. Great quality and reasonable prices."</p>
+    </div>
+    </div>
+    
+
+    <div class="footer container text-center mt-5 py-5 text-white">
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com"><img src="./Assets/Icons/facebook-app-symbol_20837.png" class="smaller-icons" alt="Facebook"></a>
+            <a href="https://instagram.com"><img src="./Assets/Icons/instagram-logo_87390.png" class="smaller-icons" alt="Instagram"></a>
+            <a href="https://twitter.com"><img src="./Assets/Icons/twitter_11823292.png" class="smaller-icons" alt="Twitter"></a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+         function changeImage(imageSrc) {
+        document.getElementById('projectImage').src = imageSrc;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+body {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    
+    background-color: #F8F4E1; /* Background color */
+    color: #543310; /* Text color */
+}
+
+.header h1, .header h2, .header p {
+    margin: 10px 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-pink {
+    background-color: #AF8F6F; /* Button background color */
+    border-color: #AF8F6F; /* Button border color */
+}
+
+.btn-pink:hover {
+    background-color: #74512D; /* Button hover background color */
+    border-color: #74512D; /* Button hover border color */
+}
+
+.services img, .project img {
+    width: 100%;
+    height: auto;
+}
+
+.stats, .testimonial {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat, .testimonial {
+    text-align: center;
+}
+
+.feedback {
+    background-color: #AF8F6F; /* Feedback section background color */
+    padding: 50px 20px;
+    text-align: center;
+    color: #F8F4E1; /* Feedback section text color */
+}
+
+.feedback h2 {
+    color: #74512D; /* Feedback section heading color */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feedback p.font-weight-bold {
+    font-size: 18px;
+}
+
+.testimonial {
+    font-size: 16px;
+    color: #543310;
+}
+
+.testimonial p {
+    margin: 10px 0;
+}
+
+.testimonial .author {
+    font-weight: bold;
+    color: #74512D; /* Testimonial author color */
+}
+
+.footer {
+    background-color: #AF8F6F; /* Footer background color */
+    color: #F8F4E1; /* Footer text color */
+    padding: 40px 0;
+}
+
+.footer img {
+    margin: 20px;
+}
+
+.icons {
+    margin: 20px;
+    height: 35px;
+    width: 35px;
+}
+
+.smaller-icons {
+    margin: 15px;
+    height: 25px;
+    width: 25px;
+}
+
+footer .partners {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .partners img.partners-image {
+    max-width: 50%;
+    height: auto;
+    display: inline-block;
+}
+
+.form-check-label a {
+    color: #74512D; /* Link color */
+    text-decoration: underline;
+}
+
+.form-check-label a:hover {
+    text-decoration: none;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px 0;
+    position: relative;
+}
+
+.swiper-slide {
+    position: relative;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.slide-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.slide-content p {
+    margin: 10px 0;
+}
+
+.slide-content .btn {
+    margin-top: 10px;
+}
+
+.swiper-pagination {
+    bottom: 10px !important;
+}
+
+.swiper-pagination-bullet {
+    background: #AF8F6F; 
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #74512D; 
+}
+
+.project-item {
+    cursor: pointer;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.project-item:hover {
+    background-color: #74512D;
+}
+
+.growth-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F8F4E1; /* Growth card background color */
+}
+
+.growth-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #74512D; /* Growth card hover background color */
+}
